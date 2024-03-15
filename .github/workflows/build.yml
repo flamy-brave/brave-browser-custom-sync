@@ -4,6 +4,7 @@
 name: Build
 
 on:
+  workflow_dispatch:  # click the button on Github repo!
 
 jobs:
   build:
