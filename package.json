@@ -2,13 +2,13 @@
   "name": "brave",
   "version": "1.66.4",
   "description": "Next generation Brave browser for macOS, Windows, Linux, and Android",
-  "homepage": "https://github.com/brave/brave-browser#readme",
+  "homepage": "https://github.com/NicholasFlamy/brave-browser-custom-sync#readme",
   "bugs": {
-    "url": "https://github.com/brave/brave-browser/issues"
+    "url": "https://github.com/NicholasFlamy/brave-browser-custom-sync/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brave/brave-browser.git"
+    "url": "git+https://github.com/NicholasFlamy/brave-browser-custom-sync.git"
   },
   "license": "MPL-2.0",
   "author": {
@@ -43,7 +43,7 @@
         "dir": "src/brave",
         "branch": "master",
         "repository": {
-          "url": "https://github.com/brave/brave-core.git"
+          "url": "NicholasFlamy/brave-core-custom-sync"
         }
       }
     }
