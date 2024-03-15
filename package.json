@@ -12,7 +12,7 @@
   },
   "license": "MPL-2.0",
   "author": {
-    "name": "Brave Software <support@brave.com>"
+    "name": "Brave Software <support@brave.com> (This build by NicholasFlamy)"
   },
   "scripts": {
     "apply_patches": "cd src/brave && npm run apply_patches --",
