@@ -1,6 +1,8 @@
 
 This is an attempt to make autobuilds with a custom sync server option.
 
+Credit to [@Fmstrat](https://github.com/Fmstrat) for most of the work.
+
 <br>
 <br>
 
