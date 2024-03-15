@@ -26,7 +26,7 @@ jobs:
           # the feature/x ref is ambiguous at this stage
 
           git checkout master
-          git merge --no-edit upstream/master
+          git merge --allow-unrelated-histories --no-edit upstream/master
           git push origin master
 
           # etc
