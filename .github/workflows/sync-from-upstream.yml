@@ -10,6 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Setup Git User
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "${{ secrets.MY_EMAIL }}"
+      
       - name: Merge upstream
         run: |
 
