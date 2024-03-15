@@ -47,7 +47,7 @@ Follow the instructions for your platform:
 Once you have the prerequisites installed, you can get the code and initialize the build environment.
 
 ```bash
-git clone git@github.com:NicholasFlamy/brave-core-custom-sync.git path-to-your-project-folder/src/brave
+git clone https://github.com/NicholasFlamy/brave-core-custom-sync.git path-to-your-project-folder/src/brave
 cd path-to-your-project-folder/src/brave
 npm install
 
