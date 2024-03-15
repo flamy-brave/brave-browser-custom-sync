@@ -1,3 +1,9 @@
+
+This is an attempt to make autobuilds with a custom sync server option.
+
+<br>
+<br>
+
 ![Brave Browser](./docs/source/_static/Brave.svg)
 
 ## Overview
