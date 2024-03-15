@@ -14,5 +14,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm 
-      - run: npm test
+      - run: git clone https://github.com/NicholasFlamy/brave-core-custom-sync.git ./src/brave
+      - run: cd ./src/brave && npm install && npm run init
+      - run: cd ../../ && npm run build Release
