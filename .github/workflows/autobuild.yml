@@ -11,16 +11,16 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: 'Checkout Target Repo'
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
         with:
           clean: 'false'
       - name: 'Setup Node'
-      - uses: actions/setup-node@v3
+        uses: actions/setup-node@v3
         with:
           node-version: 16
-      - name: 'Do its thing 1'
-      - run: git clone https://github.com/flamy-brave/brave-core-custom-sync.git ./src/brave
-      - name: 'Do its thing 2'
-      - run: cd ./src/brave && npm install && npm run init
-      - name: 'Do its thing 3'
-      - run: cd ../../ && npm run build Release
+      - name: "Do its thing 1"
+        run: git clone https://github.com/flamy-brave/brave-core-custom-sync.git ./src/brave
+      - name: "Do its thing 2"
+        run: cd ./src/brave && npm install && npm run init
+      - name: "Do its thing 3"
+        run: cd ../../ && npm run build Release
