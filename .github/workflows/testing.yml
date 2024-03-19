@@ -7,9 +7,13 @@ jobs:
   test:
     runs-on: self-hosted
     steps:
+      - name: 'Setup Node'
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
       - run: ls -la
       - run: cd / && ls -la
       - run: cd $GITHUB_WORKSPACE && ls -la
       - run: cd ~ && ls -la
       - run: cd ~/actions-runner/_work/brave-browser-custom-sync/brave-browser-custom-sync && ls -la
-      - run: npm
+      - run: npm help
