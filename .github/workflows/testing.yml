@@ -9,5 +9,6 @@ jobs:
     steps:
       - run: ls -la
       - run: cd / && ls -la
+      - run: cd $GITHUB_WORKSPACE && ls -la
       - run: cd ~ && ls -la
       - run: cd ~/actions-runner/_work/brave-browser-custom-sync/brave-browser-custom-sync && ls -la
