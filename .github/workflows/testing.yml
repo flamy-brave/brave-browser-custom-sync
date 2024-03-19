@@ -4,7 +4,7 @@ on:
   workflow_dispatch:  # click the button on Github repo!
 
 jobs:
-  build:
+  test:
     runs-on: self-hosted
     steps:
       - run: ls -la
