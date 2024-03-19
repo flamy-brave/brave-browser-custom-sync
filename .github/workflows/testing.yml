@@ -1,0 +1,12 @@
+name: 'Testing'
+
+on:
+  workflow_dispatch:  # click the button on Github repo!
+
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - run: ls -la
+      - run: cd / && ls -la
+      - run: cd ~ && ls -la
