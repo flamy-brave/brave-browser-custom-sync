@@ -1,3 +1,11 @@
+
+This is an attempt to make autobuilds with a custom sync server option.
+
+Credit to [@Fmstrat](https://github.com/Fmstrat) for most of the work.
+
+<br>
+<br>
+
 ![Brave Browser](./docs/source/_static/Brave.svg)
 
 ## Overview
@@ -47,7 +55,7 @@ Follow the instructions for your platform:
 Once you have the prerequisites installed, you can get the code and initialize the build environment.
 
 ```bash
-git clone git@github.com:brave/brave-core.git path-to-your-project-folder/src/brave
+git clone --branch stable https://github.com/flamy-brave/brave-core-custom-sync.git path-to-your-project-folder/src/brave
 cd path-to-your-project-folder/src/brave
 npm install
 
