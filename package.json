@@ -43,7 +43,7 @@
         "dir": "src/brave",
         "branch": "master",
         "repository": {
-          "url": "flamy-brave/brave-core-custom-sync"
+          "url": "https://github.com/flamy-brave/brave-core-custom-sync.git"
         }
       }
     }
