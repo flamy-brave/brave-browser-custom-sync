@@ -16,18 +16,27 @@ jobs:
     name: Sync latest commits from upstream repo
     steps:
     # REQUIRED step
-    # Step 1: run a standard checkout action, provided by github
-    - name: Checkout target repo
+    # Step 1: request upstream releases from github api using fjogeleit/http-request-action
+    - name: Obtain latest upstream release tag
+      # don't omit the step ID, it's used later to access the api response
+      id: upstream_releases
+      uses: fjogeleit/http-request-action@v1
+      with:
+        url: "https://api.github.com/repos/brave/brave-browser/releases?page=1&per_page=1"
+        method: 'GET'
+    # REQUIRED step
+    # Step 2: run a standard checkout action, provided by github
+    - name: Checkout target repo to upstream release tag ref
       uses: actions/checkout@v3
       with:
         # optional: set the branch to checkout,
         # sync action checks out your 'target_sync_branch' anyway
-        ref:  master
+        ref:  ${{ fromJson(steps.upstream_releases.outputs.response)[0].tag_name }}
         # REQUIRED if your upstream repo is private (see wiki)
         persist-credentials: false
 
     # REQUIRED step
-    # Step 2: run the sync action
+    # Step 3: run the sync action
     - name: Sync upstream changes
       id: sync
       uses: aormsby/Fork-Sync-With-Upstream-action@v3.4.1
@@ -42,7 +51,7 @@ jobs:
         # Set test_mode true during manual dispatch to run tests instead of the true action!!
         test_mode: ${{ inputs.sync_test_mode }}
       
-    # Step 3: Display a sample message based on the sync output var 'has_new_commits'
+    # Step 4: Display a sample message based on the sync output var 'has_new_commits'
     - name: New commits found
       if: steps.sync.outputs.has_new_commits == 'true'
       run: echo "New commits were found to sync."
