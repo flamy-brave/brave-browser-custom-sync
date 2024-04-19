@@ -1,5 +1,43 @@
 # Changelog
 
+## [1.64.122](https://github.com/brave/brave-browser/releases/tag/v1.64.122)
+
+ - Fixed an issue where Brave wouldn't change to another language on "Android 13" and above. ([#28822](https://github.com/brave/brave-browser/issues/28822))
+ - Upgraded Chromium to 123.0.6312.122. ([#37474](https://github.com/brave/brave-browser/issues/37474)) ([Changelog for 123.0.6312.122](https://chromium.googlesource.com/chromium/src/+log/123.0.6312.105..123.0.6312.122?pretty=fuller&n=1000))
+
+## [1.64.116](https://github.com/brave/brave-browser/releases/tag/v1.64.116)
+
+ - Disabled Brave Leo when "Block Scripts" has been enabled globally via "Brave Shields & privacy" settings. ([#37146](https://github.com/brave/brave-browser/issues/37146))
+ - Upgraded Chromium to 123.0.6312.105. ([#37268](https://github.com/brave/brave-browser/issues/37268)) ([Changelog for 123.0.6312.105](https://chromium.googlesource.com/chromium/src/+log/123.0.6312.86..123.0.6312.105?pretty=fuller&n=1000))
+
+## [1.64.113](https://github.com/brave/brave-browser/releases/tag/v1.64.113)
+
+ - Added voice support for Brave Leo. ([#37053](https://github.com/brave/brave-browser/issues/37053))
+ - Improved Brave Leo handling for YouTube video transcripts. ([#34945](https://github.com/brave/brave-browser/issues/34945))
+ - Fixed payout status banner not being displayed under rewards panel for self-custody. ([#36773](https://github.com/brave/brave-browser/issues/36773))
+ - Upgraded Chromium to 123.0.6312.86. ([#37097](https://github.com/brave/brave-browser/issues/37097)) ([Changelog for 123.0.6312.86](https://chromium.googlesource.com/chromium/src/+log/123.0.6312.58..123.0.6312.86?pretty=fuller&n=1000))
+
+## [1.64.109](https://github.com/brave/brave-browser/releases/tag/v1.64.109)
+
+### Web3
+
+ - Added support for SNS V2 Records. ([#35958](https://github.com/brave/brave-browser/issues/35958))
+ - Implemented new Brave Wallet onboarding. ([#35713](https://github.com/brave/brave-browser/issues/35713)) & ([#35488](https://github.com/brave/brave-browser/issues/35488))
+
+### Rewards
+
+ - Added self-custody option for Brave Rewards. ([#35334](https://github.com/brave/brave-browser/issues/35334))
+ - Updated generic linking error text. ([#33955](https://github.com/brave/brave-browser/issues/33955))
+
+### General
+
+ - Improved Chromium storage partitioning by making it compatible with Brave's ephemeral storage implementation. ([#26165](https://github.com/brave/brave-browser/issues/26165))
+ - Improved brave://adblock by redirecting to "Custom Filters" via settings. ([#35269](https://github.com/brave/brave-browser/issues/35269))
+ - Renamed "Data Preferences" button under Sync settings to "Sync Options". ([#13530](https://github.com/brave/brave-browser/issues/13530))
+ - Fixed Brave Leo so that if a content node isn't found the root content node is used. ([#35371](https://github.com/brave/brave-browser/issues/35371))
+ - Fixed invalid URLs being used when reporting websites via "Report a broken site" under the shields panel. ([#35244](https://github.com/brave/brave-browser/issues/35244))
+ - Upgraded Chromium to 123.0.6312.58. ([#36938](https://github.com/brave/brave-browser/issues/36938)) ([Changelog for 123.0.6312.58](https://chromium.googlesource.com/chromium/src/+log/122.0.6261.128..123.0.6312.58?pretty=fuller&n=1000))
+
 ## [1.63.174](https://github.com/brave/brave-browser/releases/tag/v1.63.174)
 
  - Upgraded Chromium to 122.0.6261.128. ([#36732](https://github.com/brave/brave-browser/issues/36732)) ([Changelog for 122.0.6261.128](https://chromium.googlesource.com/chromium/src/+log/122.0.6261.111..122.0.6261.128?pretty=fuller&n=1000))
