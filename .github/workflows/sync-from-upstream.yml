@@ -13,8 +13,6 @@ on:
 jobs:
   sync_latest_from_upstream:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     name: Sync latest commits from upstream repo
     steps:
     # REQUIRED step
@@ -36,10 +34,10 @@ jobs:
       with:
         target_sync_branch: master
         # REQUIRED 'target_repo_token' exactly like this!
-        target_repo_token: ${{ secrets.GITHUB_TOKEN }}
+        target_repo_token: ${{ secrets.UPSTREAM_SYNC_TOKEN }}
         upstream_sync_branch: master
         upstream_sync_repo: brave/brave-browser
-        upstream_repo_access_token: ${{ secrets.GITHUB_TOKEN }}
+        upstream_repo_access_token: ${{ secrets.UPSTREAM_SYNC_TOKEN }}
 
         # Set test_mode true during manual dispatch to run tests instead of the true action!!
         test_mode: ${{ inputs.sync_test_mode }}
