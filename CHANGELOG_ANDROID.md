@@ -1,5 +1,27 @@
 # Changelog
 
+## [1.73.101](https://github.com/brave/brave-browser/releases/tag/v1.73.101)
+
+ - Fixed Brave Leo conversations not being persisted when closing and opening the panel on the same content. ([#42510](https://github.com/brave/brave-browser/issues/42510))
+ - Fixed an issue preventing users from enabling "Passwords" in the sync chain. ([#36190](https://github.com/brave/brave-browser/issues/36190))
+ - Upgraded Chromium to 131.0.6778.139. ([#42804](https://github.com/brave/brave-browser/issues/42804)) ([Changelog for 131.0.6778.139](https://chromium.googlesource.com/chromium/src/+log/131.0.6778.108..131.0.6778.139?pretty=fuller&n=1000))
+
+## [1.73.97](https://github.com/brave/brave-browser/releases/tag/v1.73.97)
+
+### Web3
+
+ - Improved Solana swap failure rate. ([#42434](https://github.com/brave/brave-browser/issues/42434))
+ - Fixed an issue where sign-in with Ethereum didn't work. ([#42527](https://github.com/brave/brave-browser/issues/42527))
+
+### Rewards
+
+ - Replaced the "Earnings so far" indicator in Brave Rewards UI. ([#42476](https://github.com/brave/brave-browser/issues/42476))
+
+### General
+
+ - Fixed quick actions under "/" in Brave Leo. ([#42279](https://github.com/brave/brave-browser/issues/42279))
+ - Upgraded Chromium to 131.0.6778.108. ([#42639](https://github.com/brave/brave-browser/issues/42639)) ([Changelog for 131.0.6778.108](https://chromium.googlesource.com/chromium/src/+log/131.0.6778.85..131.0.6778.108?pretty=fuller&n=1000))
+
 ## [1.73.91](https://github.com/brave/brave-browser/releases/tag/v1.73.91)
 
  - Fixed missing site settings permissions in certain cases. ([#42313](https://github.com/brave/brave-browser/issues/42313))
