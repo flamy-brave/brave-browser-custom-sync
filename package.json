@@ -1,6 +1,6 @@
 {
   "name": "brave",
-  "version": "1.75.99",
+  "version": "1.75.115",
   "description": "Next generation Brave browser for macOS, Windows, Linux, and Android",
   "homepage": "https://github.com/flamy-brave/brave-browser-custom-sync#readme",
   "bugs": {
@@ -36,6 +36,10 @@
     "test:scripts": "jest lib scripts --passWithNoTests",
     "update_patches": "cd src/brave && npm run update_patches --",
     "versions": "cd src/brave && npm run versions --"
+  },
+  "engines": {
+    "node": ">=20.0.0 <22.0.0",
+    "npm": ">=10.0.0"
   },
   "config": {
     "projects": {
