@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.78.102](https://github.com/brave/brave-browser/releases/tag/v1.78.102)
+
+ - Upgraded Chromium to 136.0.7103.113. ([#46065](https://github.com/brave/brave-browser/issues/46065)) ([Changelog for 136.0.7103.113](https://chromium.googlesource.com/chromium/src/+log/136.0.7103.93..136.0.7103.113?pretty=fuller&n=1000))
+
+## [1.78.99](https://github.com/brave/brave-browser/releases/tag/v1.78.99)
+
+ - Fixed Brave startup slowdown caused by unnecessary dev resources loading. ([#45969](https://github.com/brave/brave-browser/issues/45969))
+
 ## [1.78.97](https://github.com/brave/brave-browser/releases/tag/v1.78.97)
 
  - Upgraded Chromium to 136.0.7103.93. ([#45894](https://github.com/brave/brave-browser/issues/45894)) ([Changelog for 136.0.7103.93](https://chromium.googlesource.com/chromium/src/+log/136.0.7103.60..136.0.7103.93?pretty=fuller&n=1000))
